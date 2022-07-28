@@ -4,87 +4,87 @@
 			"no_specify": "Please specify a sub-command.",
 			"sub_commands": {
 				"setup": {
-					"already_exists": "A ticket panel with that `{custom_id}` ID already exists.",
-					"created": "Ticket panel setup successfully.\n\n{panel_info}"
+					"already_exists": "Jenis tiket dengan ID `{custom_id}`sudah tersedia.",
+					"created": "Jenis ticket berhasil dibuat.\n\n{panel_info}"
 				},
 				"delete": {
-					"not_exists": "A ticket panel with that `{custom_id}` ID does not exist.",
-					"deleted": "Ticket panel deleted successfully."
+					"not_exists": "Jenis tiket dengan ID `{custom_id}` tidak ditemukan.",
+					"deleted": "Tiket Jenis berhasil dihapus."
 				},
 				"list": {
-					"no_panels": "There are no ticket panels setup.",
-					"description": "**Here is the list of all the panels:**",
-					"footer": "Currently on page {page} of {pages}."
+					"no_panels": "Belum ada Jenis tiket.",
+					"description": "**Daftar Jenis tiket:**",
+					"footer": "Sekarang ada di halaman {page} dari {pages}."
 				},
 				"send": {
-					"no_panels": "There are no ticket panels setup.",
-					"send_success": "The ticket panel was successfully sent!",
+					"no_panels": "Belum ada Jenis tiket..",
+					"send_success": "Jenis tiket berhasil di tampilkan!",
 					"embed_config": {
 						"separator": "{counter}: {name} - {emoji}",
-						"title": "Support System | Create Ticket",
-						"description": "By clicking one of the corresponding button categories on this message, you will create a ticket with direct and private access to the staff.\n\n__**Support Categories**__\n{separator}\n\n__**Ticket Information**__\n`•` Before creating a ticket read the proper **FAQ** Channels.\n`•` Abuse of the ticket system will lead to **punishment(s)**",
-						"footer": "Please use the buttons below to create a ticket.",
+						"title": "NKRI Support Center | Join Platoon",
+						"description": "Silahkan pilih keperluan Anda, admin/moderator yang tersedia akan membantu Anda.\n\n__**Kategori : **__\n{separator}\n\n__**Informasi Tiket**__\n`•` Tiket hanya bisa dibuat sekali.\n`•` Jika tidak kunjung dibalas, harap tunggu 1x24 Jam",
+						"footer": "Pilih tombol dibawah ini untuk memilih jenis tiket.",
 						"color": "AQUA"
 					}
 				}
 			}
 		},
 		"add": {
-			"success": "The user {user_mention} was added to the ticket.",
-			"user_already_in_ticket": "{user_mention} is already in this ticket."
+			"success": "User {user_mention} ditambahkan ke tiket.",
+			"user_already_in_ticket": "{user_mention} sudah berada didalam tiket."
 		},
 		"remove": {
-			"user_removed": "The user {user_mention} was removed from the ticket.",
-			"user_not_in_ticket": "{user_mention} is not in this ticket."
+			"user_removed": "User {user_mention} dikeluarkan dari tiket.",
+			"user_not_in_ticket": "{user_mention} belum ada di tiket."
 		},
 		"close": {
-			"closed_by": "{user_mention} has closed the ticket."
+			"closed_by": "{user_mention} menutup tiket."
 		},
 		"open": {
-			"opened_by": "{user_mention} has opened the ticket."
+			"opened_by": "{user_mention} membuka tiket."
 		},
 		"rename": {
-			"success": "{user_mention} has renamed the ticket to {new_name}."
+			"success": "{user_mention} mengubah nama tiket menjadi {new_name}."
 		},
 		"alert": {
-			"user_message": "Hello {user_mention} you have an open [ticket]({link}) and a staff member needs you to respond to it immediately\n\n**Ticket Information**\n » Ticket Name: {channel_name}\n » Ticket Since: {openSince}\n » Ticket Link: {direct_link}",
-			"staff_message": "I just sent a message to the user, please wait for him to reply"
+			"user_message": "Hello {user_mention} kamu punya tiket aktif [ticket]({link}) dan kami butuh responmu! \n\n**Informasi Tiket**\n » nama Tiket : {channel_name}\n » Waktu Pembuatan: {openSince}\n » Link Tiket: {direct_link}",
+			"staff_message": "Pesan sudah dikirim ke {user_mention}. Tunggu balasan dari {user_mention}"
 		},
 		"claim": {
-			"already_claimed": "This ticket is already claimed by {user_mention}.",
-			"claimed": "This ticket is now claimed by {user_mention}."
+			"already_claimed": "Tiket sudah di klaim oleh {user_mention}.",
+			"claimed": "Tiket ini baru saja di klaim oleh {user_mention}."
 		},
 		"giveto": {
-			"ticket_not_claimed": "This ticket is not claimed.",
-			"ticket_not_claimed_by_you": "This ticket is not claimed by you.",
-			"ticket_given_to": "{author_mention} has given the ticket to {user_mention}."
+			"ticket_not_claimed": "Tiket ini belum di klaim.",
+			"ticket_not_claimed_by_you": "Tiket belum kamu klaim.",
+			"ticket_given_to": "Tiket dipindahkan dari {author_mention} kepada {user_mention}."
 		}
 	},
 	"embeds": {
 		"message_ticket": {
-			"creating": "Creating ticket...",
-			"created": "Ticket created successfully {channel_mention}!",
-			"title": "Ticket Created | {panel_name} #{ticket_number}",
-			"description": "Hello {member_username}, our staff will answer you as quickly as possible.\nIn the meantime, please describe your problem here in as much detail as possible.\n\n**Ticket Panel:** {panel_name}\n**Ticket Owner:** {member_mention}\n**Ticket Date:** {ticket_date}",
+			"creating": "Membuka tiket...",
+			"created": "Tiket berhasil dibuat! {channel_mention}!",
+			"title": "Tiket | {panel_name} #{ticket_number}",
+			"description": "Halo {member_username} !, admin/moderator yang tersedia akan membantu Anda.\nJika Anda ingin mendaftar Platoon, silahkan share ID Origin dan Namamu! \nJika perlu bantuan lainnya, silahkan tulis keluhanmu.\n\n**Jenis Tiket:** {panel_name}\n**Pemilik Tiket:** {member_mention}\n**Tanggal Dibuat:** {ticket_date}",
 			"color": "AQUA"
 		}
 	},
 	"buttons": {
 		"close": {
-			"text": "Close",
+			"text": "Tutup",
 			"emoji": "🔒",
 			"style": "SECONDARY",
 			"messages": {
-				"closed_ticket": "{user_mention} has closed the ticket.",
+				"closed_ticket": "{user_mention} menutup tiket.",
 				"closed_ticket_staff": "```Support team ticket controls```"
 			}
 		},
 		"claim": {
-			"text": "Claim",
+			"text": "Klaim",
 			"emoji": "👋",
 			"style": "SECONDARY",
 			"messages": {
-				"claimed_ticket": "{user_mention} has claimed the ticket."
+				"claimed_ticket": "{user_mention} klaim tiket."
 			}
 		},
 		"transcript": {
@@ -92,16 +92,16 @@
 			"emoji": "📑",
 			"style": "SECONDARY",
 			"messages": {
-				"saving_transcript": "Saving transcript...",
-				"transcript_saved": "Transcript saved successfully!"
+				"saving_transcript": "Menyimpan rekapan...",
+				"transcript_saved": "Rekapan berhasil disimpan!"
 			}
 		},
 		"open": {
-			"text": "Open",
+			"text": "Buat",
 			"emoji": "🔓",
 			"style": "SECONDARY",
 			"messages" : {
-				"ticket_opened": "{user_mention} has opened the ticket."
+				"ticket_opened": "{user_mention} membuka tiket."
 			}
 		},
 		"delete": {
@@ -109,7 +109,7 @@
 			"emoji": "⛔",
 			"style": "SECONDARY",
 			"messages": {
-				"deleting_ticket": "This ticket will be deleted in {time} seconds."
+				"deleting_ticket": "Tiket ini akan dihapus dalam {time} detik."
 			}
 		}
 	},
